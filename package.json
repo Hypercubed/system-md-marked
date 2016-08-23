@@ -1,6 +1,6 @@
 {
   "name": "system-md-marked",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "md",
   "registry": "jspm",
   "jspmNodeConversion": false,
