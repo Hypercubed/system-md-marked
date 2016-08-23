@@ -1,12 +1,14 @@
 SystemJS.config({
   browserConfig: {
     "paths": {
-      "github:": "/jspm_packages/github/"
+      "github:": "/jspm_packages/github/",
+      "npm:": "/jspm_packages/npm/"
     }
   },
   nodeConfig: {
     "paths": {
-      "github:": "jspm_packages/github/"
+      "github:": "jspm_packages/github/",
+      "npm:": "jspm_packages/npm/"
     }
   },
   paths: {
@@ -31,10 +33,12 @@ SystemJS.config({
 
 SystemJS.config({
   packageConfigPaths: [
-    "github:*/*.json"
+    "github:*/*.json",
+    "npm:@*/*.json",
+    "npm:*.json"
   ],
   map: {
-    "marked": "github:chjj/marked@0.3.6"
+    "marked": "npm:marked@0.3.6"
   },
   packages: {}
 });

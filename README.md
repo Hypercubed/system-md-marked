@@ -1,7 +1,7 @@
 system-md-marked
 =========
 
-Markdown loader for SystemJS
+Markdown loader for SystemJS using [marked](https://github.com/chjj/marked).
 
 # Overview
 
@@ -58,3 +58,11 @@ System.config({
   }
 });
 ```
+
+# Acknowledgements
+
+This code is based on [guybedford/system-md](https://github.com/guybedford/system-md).
+
+# License
+
+MIT

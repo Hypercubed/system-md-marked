@@ -5,6 +5,6 @@
   "registry": "jspm",
   "jspmNodeConversion": false,
   "dependencies": {
-    "marked": "github:chjj/marked@^0.3.6"
+    "marked": "npm:marked@^0.3.6"
   }
 }
