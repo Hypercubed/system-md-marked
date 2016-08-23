@@ -1,17 +1,12 @@
-var showdown = require('showdown');
-var converter = new showdown.Converter();
+var marked = require('marked');
 
 exports.translate = function(load) {
   var converterOptions = load.metadata.mdOptions;
   if (converterOptions) {
-    for (var opt in converterOptions) {
-      if (converterOptions.hasOwnProperty(opt)) {
-        converter.setOption(opt, converterOptions[opt])
-      }
-    }
+    marked.setOptions(converterOptions);
   }
 
-  return 'module.exports = "' + converter.makeHtml(load.source)
+  return 'module.exports = "' + marked(load.source)
     .replace(/(["\\])/g, '\\$1')
     .replace(/[\f]/g, "\\f")
     .replace(/[\b]/g, "\\b")

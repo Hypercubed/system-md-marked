@@ -1,10 +1,10 @@
 {
-  "name": "systemjs-plugin-md",
+  "name": "system-md-marked",
   "version": "0.1.0",
   "main": "md",
   "registry": "jspm",
   "jspmNodeConversion": false,
   "dependencies": {
-    "showdown": "^1.2.3"
+    "marked": "github:chjj/marked@^0.3.6"
   }
 }

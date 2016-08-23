@@ -1,18 +1,18 @@
-plugin-md
+system-md-marked
 =========
 
 Markdown loader for SystemJS
 
 # Overview
 
-A plugin for [SystemJS](https://github.com/systemjs/systemjs) which enables you to import markdown files directly. The files are compiled in the browser to HTML using [showdown](https://github.com/showdownjs/showdown).
+A plugin for [SystemJS](https://github.com/systemjs/systemjs) which enables you to import markdown files directly. The files are compiled in the browser to HTML using [marked](https://github.com/chjj/marked).
 
 # Installation
 
 For installing with JSPM run:
 
 ```sh
-jspm install md
+jspm install md=github:Hypercubed/system-md-marked
 ```
 
 # Basic Use
@@ -23,7 +23,7 @@ import readmeHTML from './readme.md!'
 
 # Configuration
 
-[Showdown configuration options](https://github.com/showdownjs/showdown#valid-options) are passed via "mdOptions".
+[Marked configuration options](https://github.com/chjj/marked#options-1) are passed via "mdOptions".
 
 ## Either: use the meta tag
 
